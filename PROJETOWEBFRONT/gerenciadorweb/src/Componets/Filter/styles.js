@@ -6,21 +6,21 @@ export const Container = styled.div`
         background: ${props => props.activation ? '#6077A3' : '#000000'};
 
         border-radius: 5px;
-        padding: 10px;
+        padding: 12px;
         cursor:pointer;
         display: flex;
-        width:160px;
-                height:70px;
-                border:solid 2px;
-                border-radius:12px;
+        width:140px;
+                height:45px;
+                border:solid 5px;
+                border-radius:5px;
                 color: #00000;
                 
 
 
         img{
-                width: 80px;
-                height: 78px;
-                margin-top: -14px;
+                width: 79px;
+                height: 79px;
+                margin-top: -18px;
                 margin-left: -15px;
                 
         }

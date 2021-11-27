@@ -1,13 +1,14 @@
 import React from 'react'
 import * as Styled from './styles'
+import { Link } from "react-router-dom";
 
 function Header(){
    return(
       <Styled.Container>  
           <Styled.Menu>
-          <a href = "">ÍNICIO</a>
+          <Link to="/">ÍNICIO</Link>
             <span className="barra" />
-          <a href = "">TAREFA</a>
+          <Link to="/task">TAREFA</Link>
       </Styled.Menu>
          </Styled.Container>
    )

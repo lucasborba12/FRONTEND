@@ -25,3 +25,5 @@ Export responsavel por exportar a função para outras areas do código
       props = entre propriedades
 
       border-radius: arredondamento
+      
+      async = fazer resquisições
