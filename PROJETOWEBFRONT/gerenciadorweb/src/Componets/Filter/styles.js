@@ -10,7 +10,7 @@ export const Container = styled.div`
         cursor:pointer;
         display: flex;
         width:140px;
-                height:45px;
+                height:35px;
                 border:solid 5px;
                 border-radius:5px;
                 color: #00000;
@@ -18,16 +18,15 @@ export const Container = styled.div`
 
 
         img{
-                width: 79px;
-                height: 79px;
-                margin-top: -18px;
-                margin-left: -15px;
+                width: 30px;
+                height: 30px;
+              
                 
         }
         span{
                 color: #FFF;
                 font-weight: bold;
-                margin-top: 18px;
+                margin-top: 15px;
                 font-size: 15px;        
                 
                         

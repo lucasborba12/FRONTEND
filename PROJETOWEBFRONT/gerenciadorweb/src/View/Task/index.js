@@ -9,8 +9,7 @@ import { Navigate } from 'react-router';
 
 /*IMAGENS */
 import Imagem from '../../Imgs/filter.png';
-import Imagem1 from '../../Imgs/filter1.png';
-import Imagem2 from '../../Imgs/filter2.png';
+
 
 /* COMPONENTES */
 import Header from'../../Componets/Header';
@@ -67,6 +66,14 @@ function Task(){
         loadTask();
     }, [])
 
+    async function deleteTask(){
+        const res = window.confirm("Gostaria de remover esta tarefa?")
+        if(res == true){
+            await api.delete(`/task/${id}`)
+            .then(setNavigate(true))
+        }
+    }
+
 
             return(
   <Styled.Container>
@@ -105,7 +112,7 @@ function Task(){
               <input type="checkbox" check={done} onChange={e => setDone(e.target.value)}></input>
                   <span>CONCLUÍDO</span>
               </div>
-              <button type="button">EXCLUIR</button>
+              {id && <button type="button" onClick={deleteTask}>EXCLUIR</button>}
           </Styled.Option>
          
           <Styled.Save>

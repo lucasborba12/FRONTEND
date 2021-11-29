@@ -7,8 +7,6 @@ import { Link } from 'react-router-dom';
 
 /*IMAGENS */
 import Imagem from '../../Imgs/filter.png';
-import Imagem1 from '../../Imgs/filter1.png';
-import Imagem2 from '../../Imgs/filter2.png';
 
 /* COMPONENTES */
 import Header from'../../Componets/Header';
@@ -43,11 +41,11 @@ useEffect(() => {
           </button>
           
           <button type='button' onClick={() => functionFilter('today')}>
-          <Filter title="HOJE"img={Imagem1} actived={filterActive == 'hoje'}/>
+          <Filter title="HOJE"img={Imagem} actived={filterActive == 'hoje'}/>
           </button>
           
           <button type='button' onClick={() => functionFilter('week')}>
-          <Filter title="SEMANA"img={Imagem2} actived={filterActive == 'semana'}/>
+          <Filter title="SEMANA"img={Imagem} actived={filterActive == 'semana'}/>
           </button>
          
           <button type='button' onClick={() => functionFilter('month')}>
